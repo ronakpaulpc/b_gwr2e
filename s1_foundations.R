@@ -35,9 +35,22 @@ install.packages("spDataLarge", repos = "https://nowosad.r-universe.dev")
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # C2 - Geographic data in R -----------------------------------------------
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Prerequisites
+# Loading the required packages for this chapter.
+library(easypackages)
+libraries(
+    "sf",
+    "terra",
+    "spData",
+    "spDataLarge"
+)
 
 
+# C2.1 Introduction -------------------------------------------------------
+# NO CODE.
 
+
+# C2.2 Vector data --------------------------------------------------------
 
 
 
