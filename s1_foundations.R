@@ -1,27 +1,50 @@
-# Practice code of "Geocomputation with R" second edition
-# We will see and run the code from the book
+# Practice code of "Geocomputation with R" 2nd edition by Robin Lovelace & co.
+# In this directory we have code in script files from each book section.
+# Then in each script we have code sections for each book chapter.
+# This script contains code from "Foundations" section of the book.
+
+# Happy learning!
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# C0 - Installing and loading ---------------------------------------------
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Working directory check
+getwd()
 
+# We install the required packages
+install.packages(c(
+    "sf",               # classes and functions for vector data
+    "terra",            # classes and functions for raster data
+    "spData"            # loading geographic data
+))
 
-# C0 - Setup --------------------------------------------------------------
-# Installing the required packages
-install.packages(c("sf",            # classes and functions for vector data 
-                   "terra",         # classes and functions for raster data
-                   "spData"))       # loading geographic data
-# loading larger geographic data
+# Custom installing package for loading larger geographic data
 install.packages("spDataLarge", repos = "https://nowosad.r-universe.dev")
 
-pacman::p_load(sf,                  # package for spatial vector data
-               terra,               # package for spatial raster data
-               spData,              # load geographic data
-               spDataLarge,         # load larger geographic data
-               sp                   # old package for sf
-               )
+# Random code
+# pacman::p_load(sf,                  # package for spatial vector data
+#                terra,               # package for spatial raster data
+#                spData,              # load geographic data
+#                spDataLarge,         # load larger geographic data
+#                sp                   # old package for sf
+#                )
 
 
-
+#_====
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # C2 - Geographic data in R -----------------------------------------------
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
 # 2.2.1 An introduction to simple features
 # Reading vignettes for the sf package
 vignette(package = "sf")
